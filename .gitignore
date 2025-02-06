@@ -1,0 +1,4 @@
+venv
+faiss_vectors?*
+Chroma_vector?*
+reserve?*
