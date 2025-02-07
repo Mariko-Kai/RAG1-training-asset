@@ -1,4 +1,6 @@
+__pycache__
 venv
 faiss_vectors?*
 Chroma_vector?*
+TFIDF_vector?*
 reserve?*
