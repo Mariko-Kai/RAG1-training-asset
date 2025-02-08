@@ -75,9 +75,9 @@ def embedding(chunks: list[Document], input: str):
 
     result = None
     list_index = list()
-    for i in range(k):
+    for i in range(len(results)):
         list_index.append(str(int(results[i].metadata["id"]) + 1))
-    for i in range(k):
+    for i in results:
         result = [doc for doc in chunks if doc.metadata["id"] in list_index]
     results.extend(result)
     results_sorted = sorted(results, key=get_id_key)
